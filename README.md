@@ -103,6 +103,7 @@ openssl x509 -in /etc/ssl/certs/school/*.crt -text -noout | grep "Subject:"
 4. Настройка DNS
    
 После установки dnsmasq-full нужно проверить и обновить конфигурацию:
+
 4.1. Обновление конфигурации DHCP/DNS
 ```bash
 # Добавляем поддержку nftset в dnsmasq
