@@ -828,17 +828,6 @@ chmod +x /root/mintsifra-proxy.sh
 
 # Создаем символическую ссылку для удобства
 ln -sf /root/mintsifra-proxy.sh /usr/bin/proxy
-
-echo -e "${GREEN}✅ Скрипт управления установлен!${NC}"
-echo -e "Теперь вы можете использовать команду: ${YELLOW}proxy${NC}"
-echo -e "Пример: ${YELLOW}proxy help${NC} - для справки"
-EOF
-
-# Делаем скрипт исполняемым
-chmod +x /root/mintsifra-proxy.sh
-
-# Создаем символическую ссылку для удобства
-ln -sf /root/mintsifra-proxy.sh /usr/bin/proxy
 ```
 
 8. Запуск и проверка
