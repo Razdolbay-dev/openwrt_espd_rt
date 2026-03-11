@@ -290,6 +290,7 @@ nft list table inet tinyproxy
 ```
 
 7. Создание скрипта управления
+
 7.1. Создаем удобный скрипт для управления прокси
 ```bash
 cat > /root/mintsifra-proxy.sh << 'EOF'
@@ -841,6 +842,7 @@ ln -sf /root/mintsifra-proxy.sh /usr/bin/proxy
 ```
 
 8. Запуск и проверка
+
 8.1. Проверьте ваш IP и подсеть
 ```bash
 # Убедитесь, что в скрипте правильные IP и подсеть
@@ -921,6 +923,7 @@ proxy test
 ```
 
 9. Диагностика проблем
+
 9.1. Прокси-сервер 10.0.10.52 не доступен
 ```bash
 # Проверка доступности
@@ -945,7 +948,7 @@ cat /etc/config/tinyproxy
 9.3. nftables правила не загружаются
 ```bash
 # Проверка синтаксиса
-nft -c -f /etc/nftables.d/11-tinyproxy-tproxy.nft
+nft -c -f /root/tinyproxy-tproxy.nft
 
 # Проверка загруженных правил
 nft list ruleset
