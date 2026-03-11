@@ -1,9 +1,8 @@
 # Настройка OpenWRT для прокси Минцифры
 
 Ссылка на сертификат ```https://espd.rt.ru/settings/cert-install```
-Ссылка на таблицу прокси ```link 
-https://espd.rt.ru/filtering/proxy-settings
-```
+
+Ссылка на таблицу прокси ```https://espd.rt.ru/filtering/proxy-settings```
 
 1. Подготовка и подключение к роутеру
 
