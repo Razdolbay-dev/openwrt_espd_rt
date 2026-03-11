@@ -27,6 +27,7 @@ opkg update
 ```
 
 2. Установка необходимых пакетов
+   
 2.1. Установите все нужные пакеты
 ```bash
 # Устанавливаем основные пакеты
@@ -71,6 +72,7 @@ dnsmasq --version | grep nftset
 
 
 3. Установка корневого сертификата
+   
 3.1. Создайте директорию для сертификатов
 ```bash
 mkdir -p /etc/ssl/certs/school
@@ -99,6 +101,7 @@ openssl x509 -in /etc/ssl/certs/school/*.crt -text -noout | grep "Subject:"
 ```
 
 4. Настройка DNS
+   
 После установки dnsmasq-full нужно проверить и обновить конфигурацию:
 4.1. Обновление конфигурации DHCP/DNS
 ```bash
@@ -176,6 +179,7 @@ uci commit dhcp
 
 
 5. Настройка Tinyproxy
+   
 5.1. Создание конфигурации Tinyproxy
 ```bash
 cat > /etc/config/tinyproxy << 'EOF'
@@ -225,6 +229,7 @@ ps | grep tinyproxy
 
 
 6. Настройка маршрутизации для TPROXY
+
 6.1. Создание таблицы маршрутизации
 ```bash
 # Добавляем таблицу tproxy_table, если её нет
